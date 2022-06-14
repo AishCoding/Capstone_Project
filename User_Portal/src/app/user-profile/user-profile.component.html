@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md">
+      <div class="row">
+        <div class="card account profile">
+          <div class="card-header">
+            <img
+              src="https://th.bing.com/th/id/R.c3631c652abe1185b1874da24af0b7c7?rik=XBP%2fc%2fsPy7r3HQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-user-icon-circled-user-icon-2240.png&ehk=z4ciEVsNoCZtWiFvQQ0k4C3KTQ6wt%2biSysxPKZHGrCc%3d&risl=&pid=ImgRaw&r=0"
+              class="profile-pic"
+              alt="User photo"
+            />
+            <br />
+            <span class="user">{{ userName }}'s profile</span>
+          </div>
+          <div class="card-body">
+            <p class="card-text">First Name: {{ firstname }}</p>
+            <p class="card-text">Last Name: {{ lastname }}</p>
+            <p class="card-text">Mobile Number: {{ phonenumber }}</p>
+            <p class="card-text">Email id: {{ email }}</p>
+            <p class="card-text">Address : {{ address }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="row">
+        <div class="card account">
+          <div class="card-header">
+            <h5 class="card-title">Primary Account</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Account Number: {{ primaryAccountNumber }}</p>
+            <p class="card-text">
+              Account Balance: {{ primaryAccountBalance }} Rs
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card account">
+          <div class="card-header">
+            <h5 class="card-title">Saving Account</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Account Number: {{ savingAccountNumber }}</p>
+            <p class="card-text">
+              Account Balance: {{ savingAccountBalance }} Rs
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
